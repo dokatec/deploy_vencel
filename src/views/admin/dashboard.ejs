@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jhonatan Pacheco - Desenvolvedor</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>JHONATAN PACHECO</h2>
+      <nav class="navbar">
+        <a href="#">Meus Artigos</a>
+        <a href="#">Criar Artigo</a>
+      </nav>
+      <a class="btn-link" href="">Contato</a>
+    </header>
+    <main>
+      <% post.forEach(function(posts){ %>
+      <h2><%= posts.title %></h2>
+      <h2><%= posts.body %></h2>
+      <% }); %>
+    </main>
+
+    <footer class="footer">
+      <p>Copyright © 2024. Todos os Direitos Reservados.</p>
+    </footer>
+  </body>
+</html>
